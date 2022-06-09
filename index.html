@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="calc.css" />
+  <script src="calc.js"></script>
+  <title>Calculator</title>
+</head>
+
+<body>
+  <div>
+    <header id="screen"></header>
+      <table>
+        <tbody>
+
+          <tr class="control">
+            <td onclick="clearSrc()">AC</td>
+            <td onclick="sendNum('*0.01')">%</td>
+            <td onclick="sendNum('/')">/</td>
+          </tr>
+
+          <tr class="control">
+            <td onclick="sendNum('+')">+</td>
+            <td onclick="sendNum('-')">-</td>
+            <td onclick="sendNum('*')">*</td>
+          </tr>
+
+          <tr>
+            <td onclick="sendNum('7')" class="nums">7</td>
+            <td onclick="sendNum('8')" class="nums">8</td>
+            <td onclick="sendNum('9')" class="nums">9</td>
+          </tr>
+
+          <tr>
+            <td onclick="sendNum('4')" class="nums">4</td>
+            <td onclick="sendNum('5')" class="nums">5</td>
+            <td onclick="sendNum('6')" class="nums">6</td>
+          </tr>
+
+          <tr>
+            <td onclick="sendNum('1')" class="nums">1</td>
+            <td onclick="sendNum('2')" class="nums">2</td>
+            <td onclick="sendNum('3')" class="nums">3</td>
+          </tr>
+
+          <tr>
+            <td onclick="sendNum('.')" class="nums">.</td>
+            <td onclick="sendNum('0')" class="nums">0</td>
+            <td onclick="equalTo()" class="nums">=</td>
+          </tr>
+
+          </tbody>
+        </table>
+    </div>
+</body>
+
+</html>
